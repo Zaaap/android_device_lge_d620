@@ -2,11 +2,11 @@
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 540
-TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 800
 
 # Release name
-PRODUCT_RELEASE_NAME := LG_G2_mini
-PRODUCT_NAME := cm_d620
+PRODUCT_RELEASE_NAME := LG_F70n
+PRODUCT_NAME := cm_d315
 
-$(call inherit-product, device/lge/d620/full_d620.mk)
+$(call inherit-product, device/lge/d315/full_d315.mk)

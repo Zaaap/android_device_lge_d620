@@ -5,35 +5,35 @@ vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
 # Keystore
-vendor/firmware/keymaster/keymaster.b00
-vendor/firmware/keymaster/keymaster.b02
-vendor/firmware/keymaster/keymaster.mdt
-vendor/firmware/keymaster/keymaster.b01
-vendor/firmware/keymaster/keymaster.b03
+etc/firmware/keymaster.b00
+etc/firmware/keymaster.b02
+etc/firmware/keymaster.mdt
+etc/firmware/keymaster.b01
+etc/firmware/keymaster.b03
 
 # Firmwares
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
-vendor/firmware/a225p5_pm4.fw
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/a225p5_pm4.fw
 # Venus (media) firmware
-vendor/firmware/venus.b01
-vendor/firmware/venus.b03
-vendor/firmware/venus.mbn
-vendor/firmware/venus.b00
-vendor/firmware/venus.b02
-vendor/firmware/venus.b04
-vendor/firmware/venus.mdt
+etc/firmware/venus.b01
+etc/firmware/venus.b03
+etc/firmware/venus.mbn
+etc/firmware/venus.b00
+etc/firmware/venus.b02
+etc/firmware/venus.b04
+etc/firmware/venus.mdt
 # Graphics firmware
-vendor/firmware/a225_pm4.fw
-vendor/firmware/a300_pm4.fw
-vendor/firmware/a330_pm4.fw
-vendor/firmware/a225_pfp.fw
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a330_pfp.fw
+etc/firmware/a225_pm4.fw
+etc/firmware/a300_pm4.fw
+etc/firmware/a330_pm4.fw
+etc/firmware/a225_pfp.fw
+etc/firmware/a300_pfp.fw
+etc/firmware/a330_pfp.fw
 # Camera firmware
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
 
 # Audio
 etc/ACDB/Bluetooth_cal.acdb
@@ -104,14 +104,14 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/libscale.so
 vendor/lib/libsc-a3xx.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/librs_adreno.so
+#vendor/lib/librs_adreno_sha1.so
+#vendor/lib/librs_adreno.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libgsl.so
 vendor/lib/libc2d30.so
 vendor/lib/libc2d30-a3xx.so
 vendor/lib/libadreno_utils.so
-vendor/lib/libRSDriver_adreno.so
+#vendor/lib/libRSDriver_adreno.so
 vendor/lib/libOpenVG.so
 vendor/lib/libOpenCL.so
 vendor/lib/libCB.so
@@ -140,16 +140,16 @@ lib/libchromatix_imx179_common.so
 lib/libchromatix_imx179_default_video.so
 lib/libchromatix_imx179_preview.so
 lib/libchromatix_imx179_snapshot.so
-lib/libchromatix_imx219_common.so
-lib/libchromatix_imx219_default_video.so
-lib/libchromatix_imx219_preview.so
-lib/libchromatix_imx219_snapshot.so
+#lib/libchromatix_imx219_common.so
+#lib/libchromatix_imx219_default_video.so
+#lib/libchromatix_imx219_preview.so
+#lib/libchromatix_imx219_snapshot.so
 lib/libmmcamera_hi707.so
 lib/libmmcamera_hi543.so
 lib/libmmcamera_imx111.so
 lib/libmmcamera_imx119.so
 lib/libmmcamera_imx179.so
-lib/libmmcamera_imx219.so
+#lib/libmmcamera_imx219.so
 lib/libmmcamera_interface.so
 lib/libmorpho_image_stab31.so
 lib/libmorpho_memory_allocator.so
@@ -180,7 +180,7 @@ vendor/lib/libmmcamera_hi351.so
 vendor/lib/libmmcamera_hi543_eeprom.so
 vendor/lib/libmmcamera_imx111_eeprom.so
 vendor/lib/libmmcamera_imx179_eeprom.so
-vendor/lib/libmmcamera_imx219_eeprom.so
+#vendor/lib/libmmcamera_imx219_eeprom.so
 vendor/lib/libmmcamera_mt9m114.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmjpeg.so
@@ -240,12 +240,12 @@ vendor/lib/libbmc050.so
 # Other
 vendor/firmware/libpn547_fw.so
 vendor/lib/libQSEEComAPI.so
--bin/irsc_util
+bin/irsc_util
 bin/mm-pp-daemon
 vendor/lib/libmm-abl-oem.so
 vendor/lib/libmm-abl.so
--bin/ptt_socket_app
--lib/libqsap_sdk.so
+bin/ptt_socket_app
+lib/libqsap_sdk.so
 bin/ims_rtp_daemon
 vendor/lib/lib-imsdpl.so
 vendor/lib/lib-rtpsl.so
@@ -260,20 +260,20 @@ lib/libirrc.so
 lib/libirrcClient.so
 lib/libirrcJni.so
 lib/liblgewg.so
--app/LGQRemote.apk
--app/QuicksetSDK.apk
--media/audio/ui/IR_normal.ogg
+app/LGQRemote.apk
+app/QuicksetSDK.apk
+#media/audio/ui/IR_normal.ogg
 
 # We need it?
 
--bin/port-bridge
--bin/riva_ramdump
--bin/imsdatadaemon
--bin/imsqmidaemon
--bin/bnrd
--bin/ssr_diag
--vendor/lib/hw/flp.default.so
--vendor/lib/libdisp-aba.so
--vendor/lib/libcneapiclient.so
--lib/libcnefeatureconfig.so
+bin/port-bridge
+bin/riva_ramdump
+bin/imsdatadaemon
+bin/imsqmidaemon
+bin/bnrd
+bin/ssr_diag
+#vendor/lib/hw/flp.default.so
+vendor/lib/libdisp-aba.so
+vendor/lib/libcneapiclient.so
+lib/libcnefeatureconfig.so
 
