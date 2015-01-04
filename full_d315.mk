@@ -22,6 +22,6 @@ $(call inherit-product, device/lge/d315/device_d315.mk)
 PRODUCT_DEVICE := d315
 PRODUCT_NAME := full_d315
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := d315
+PRODUCT_MODEL := LG-D315
 PRODUCT_MANUFACTURER := LGE
 
