@@ -96,8 +96,7 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/lge/d315/rootdir/fstab.f70n:root/fstab.f70n \
-    device/lge/d315/rootdir/fstab_f2fs.f70n:root/fstab_f2fs.f70n
-    \
+    device/lge/d315/rootdir/fstab_f2fs.f70n:root/fstab_f2fs.f70n \
     device/lge/d315/rootdir/init.class_main.sh:root/init.class_main.sh \
     device/lge/d315/rootdir/init.lge.early.rc:root/init.lge.early.rc \
     device/lge/d315/rootdir/init.lge.rc:root/init.lge.rc \
