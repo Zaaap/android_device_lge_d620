@@ -27,8 +27,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SPECIFIC_HEADER_PATH += device/lge/d315/include
 
 # Vendor Init
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
+#TARGET_UNIFIED_DEVICE := true
+#TARGET_INIT_VENDOR_LIB := libinit_msm
 #TARGET_LIBINIT_DEFINES_FILE := device/lge/d315/init/init_d315.c
 
 # Platform
