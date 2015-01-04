@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/lge/d315/rootdir/fstab.f70n:root/fstab.f70n \
-    device/lge/d315/rootdir/fstab_f2fs.f70n:root/fstab_f2fs.f70n \
     device/lge/d315/rootdir/init.class_main.sh:root/init.class_main.sh \
     device/lge/d315/rootdir/init.lge.early.rc:root/init.lge.early.rc \
     device/lge/d315/rootdir/init.lge.rc:root/init.lge.rc \
@@ -117,7 +116,7 @@ PRODUCT_COPY_FILES += \
     device/lge/d315/rootdir/init.zetaw.syspart_fixup.sh:root/init.zetaw.syspart_fixup.sh \
     device/lge/d315/rootdir/init.zetaw.usb.rc:root/init.zetaw.usb.rc \
     device/lge/d315/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
-    device/lge/d315/rootdir/ueventd.g2m.rc:root/ueventd.g2m.rc \
+    device/lge/d315/rootdir/ueventd.f70n.rc:root/ueventd.f70n.rc \
     device/lge/d315/rootdir/sbin/bbx:root/sbin/bbx \
     device/lge/d315/rootdir/fscheck.sh:root/fscheck.sh
 
