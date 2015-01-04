@@ -23,8 +23,8 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/d315/overlay
 
 # 
 PRODUCT_PROPERTY_OVERRIDES += \
-   ro.product.device=g2m \
-   ro.product.model=LG-D620 \
+   ro.product.device=f70n \
+   ro.product.model=LG-D315 \
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -102,9 +102,9 @@ PRODUCT_COPY_FILES += \
     device/lge/d315/rootdir/init.lge.rc:root/init.lge.rc \
     device/lge/d315/rootdir/init.mdm.sh:root/init.mdm.sh \
     device/lge/d315/rootdir/init.usb.rc:root/init.usb.rc \
-    device/lge/d315/rootdir/init.g2m.rc:root/init.g2m.rc \
-    device/lge/d315/rootdir/init.g2m.usb.rc:root/init.g2m.usb.rc \
-    device/lge/d315/rootdir/init.g2m_product.rc:root/init.g2m_product.rc \
+    device/lge/d315/rootdir/init.f70n.rc:root/init.f70n.rc \
+    device/lge/d315/rootdir/init.f70n.usb.rc:root/init.f70n.usb.rc \
+    device/lge/d315/rootdir/init.f70n_product.rc:root/init.f70n_product.rc \
     device/lge/d315/rootdir/init.zetaw.bt_vendor.rc:root/init.zetaw.bt_vendor.rc \
     device/lge/d315/rootdir/init.zetaw.class_core.sh:root/init.zetaw.class_core.sh \
     device/lge/d315/rootdir/init.zetaw.cmm.usb.sh:root/init.zetaw.cmm.usb.sh \
