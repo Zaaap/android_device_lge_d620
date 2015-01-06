@@ -24,12 +24,12 @@
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SPECIFIC_HEADER_PATH += device/lge/d620/include
+TARGET_SPECIFIC_HEADER_PATH += device/lge/d315/include
 
 # Vendor Init
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-#TARGET_LIBINIT_DEFINES_FILE := device/lge/d620/init/init_d620.c
+#TARGET_UNIFIED_DEVICE := true
+#TARGET_INIT_VENDOR_LIB := libinit_msm
+#TARGET_LIBINIT_DEFINES_FILE := device/lge/d315/init/init_d315.c
 
 # Platform
 TARGET_ARCH := arm
@@ -42,23 +42,23 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_BOOTLOADER_BOARD_NAME := d620
+TARGET_BOOTLOADER_BOARD_NAME := d315
 
-TARGET_SCREEN_HEIGHT := 960
-TARGET_SCREEN_WIDTH := 540
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/d620/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/lge/d620
-TARGET_KERNEL_CONFIG := cm11_g2m_defconfig
-# TARGET_KERNEL_CONFIG := g2m_global_com_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=g2m
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/d315/mkbootimg.mk
+TARGET_KERNEL_SOURCE := kernel/lge/d315
+TARGET_KERNEL_CONFIG := f70n_global_com_defconfig
+# TARGET_KERNEL_CONFIG := f70n_global_com_defconfig
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=f70n
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000
-#TARGET_PREBUILT_KERNEL := device/lge/d620/kernel
+#TARGET_PREBUILT_KERNEL := device/lge/d315/kernel
 
 # Global flags
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DLG_CAMERA_HARDWARE
@@ -85,7 +85,7 @@ TARGET_QCOM_MEDIA_VARIANT := caf-new
 TARGET_NO_RPC := true
 
 # Graphics
-BOARD_EGL_CFG := device/lge/d620/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/lge/d315/prebuilt/egl.cfg
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 TARGET_QCOM_DISPLAY_VARIANT := caf-new
 USE_OPENGL_RENDERER := true
@@ -101,10 +101,10 @@ TARGET_USES_CPU_BOOST_HINT := true
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/lge/d620/cmhw/
+BOARD_HARDWARE_CLASS := device/lge/d315/cmhw/
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d620/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d315/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -156,8 +156,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP Recovery
-# TARGET_PREBUILT_RECOVERY_KERNEL := device/lge/d620/rootdir/kernel
-TARGET_RECOVERY_FSTAB := device/lge/d620/rootdir/recovery.fstab
+# TARGET_PREBUILT_RECOVERY_KERNEL := device/lge/d315/rootdir/kernel
+TARGET_RECOVERY_FSTAB := device/lge/d315/rootdir/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 DEVICE_RESOLUTION := 540x960
 TW_FLASH_FROM_STORAGE := true
@@ -182,16 +182,16 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
 
-PRODUCT_COPY_FILES += device/lge/d620/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
-PRODUCT_COPY_FILES += device/lge/d620/rootdir/extra.fstab:recovery/root/etc/extra.fstab
+PRODUCT_COPY_FILES += device/lge/d315/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/lge/d315/rootdir/extra.fstab:recovery/root/etc/extra.fstab
 
 # Nfc
-BOARD_NFC_HAL_SUFFIX := d620
+BOARD_NFC_HAL_SUFFIX := d315
 BOARD_NFC_CHIPSET := pn547
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-	device/lge/d620/sepolicy
+	device/lge/d315/sepolicy
 
 BOARD_SEPOLICY_UNION += \
 	adbd.te \
